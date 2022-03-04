@@ -79,6 +79,10 @@ If you don't need custom indicators, you can do so using the following code
 
 
  ```
+ 
+
+set https_proxy=https://127.0.0.1:1079
+set http_proxy=http://127.0.0.1:1079
  flutter pub publish --dry-run
  flutter packages pub publish -v
 flutter pub publish --server=https://pub.dartlang.org
