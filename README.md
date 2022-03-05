@@ -129,3 +129,5 @@ Pageview is unable to adapt to the height of the content, and this control solve
 pageview 是无法自适应内容高度的，而本控件依赖了另外一个插件解决了这个问题，本控件的效果如上图 图片所示，支持设置最小高度，以便解决每一页高度不同导致的高度跳动问题，另外也支持自定义指示器。
 截图为example文件夹的lib/main.dart运行之后的效果
 
+qq group:748171411
+
