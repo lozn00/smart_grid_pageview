@@ -6,11 +6,15 @@
 name: Dart
 
 on:
+  workflow_dispatch:
+    inputs:
+      TAG:
+        description: 'Set a Tag'
+        required: true
+        default: ''
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
+    tags:
+      - v*
 jobs:
   build:
     runs-on: ubuntu-latest
