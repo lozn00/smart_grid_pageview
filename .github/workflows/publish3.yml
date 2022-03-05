@@ -1,0 +1,35 @@
+name: Publish to Pub.dev
+
+# 流程触发时机，当有标签创建时触发，如 v1.0.0。当然也可以选择别的触发时机，如 push，release 等
+on: 
+#create
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+jobs:
+  publishing:
+    runs-on: ubuntu-latest
+    
+    steps:
+        # 建立 Flutter 环境
+      - name: Flutter env buyild
+        uses: subosito/flutter-action@v1
+        with:
+          channel: "stable"
+          flutter-version: "2.10.2"
+      # 拉取仓库代码
+      - name: "Checkout"
+        uses: actions/checkout@v2
+      - run: echo ' access token ${{ secrets.OAUTH_ACCESS_TOKEN }}'
+      #- uses: dart-lang/setup-dart@9a04e6d73cca37bd455e0608d7e5092f881fd603
+      - name: Install dependencies
+        run: flutter pub get
+        #dart pub get
+      # 发布插件
+      - name: Dart and Flutter Package Publisher
+        uses: k-paxian/dart-package-publisher@v1.3
+        with:
+          # 设置发布插件需要的 Token
+          accessToken: ${{ secrets.OAUTH_ACCESS_TOKEN }}
+          refreshToken: ${{ secrets.OAUTH_REFRESH_TOKEN }}
