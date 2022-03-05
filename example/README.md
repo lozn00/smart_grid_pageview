@@ -79,12 +79,31 @@ If you don't need custom indicators, you can do so using the following code
 
 
  ```
- 
+ 发布插件的问题
+set https_proxy=https://127.0.0.1:1080
 
-set https_proxy=https://127.0.0.1:1079
-set http_proxy=http://127.0.0.1:1079
- flutter pub publish --dry-run
- flutter packages pub publish -v
-flutter pub publish --server=https://pub.dartlang.org
-flutter packages pub publish --server=https://pub.dartlang.org
+
+
+这个设置http代理可以不设置，如果命令行可以ping通google.com 或者pub.dartlang.org
+
+ flutter pub publish --dry-run -v #检测发布是否满足需求
+ flutter packages pub publish -v 
+flutter pub publish --server=https://pub.dartlang.org  -v
+flutter packages pub publish --server=https://pub.dartlang.org  -v
+set HTTP_PROXY=127.0.0.1:1080
+set HTpingTPS_PROXY=127.0.0.1:1080
+
+ flutter pub publish --dry
+ 
+ 
+ -run --server=https://pub.dartlang.org
+flutter packages pub publish --server=https://pub.flutter-io.cn -v
+[comment]: <> (https://pub.dartlang.org/api/packages/expandable_page_view)
+由于使用到了第三方插件，但是又开启了防火墙，这个根本搞不过来，打开了输出日志，然后不断切换vpn浏览器能打开了，这边也没再提示重试了。。
+
+dart pub publish
+unset FLUTTER_STORAGE_BASE_URL; 这个在window没用，直接设定--server或者设置为空应该就行了
+unset PUB_HOSTED_URL
+ 
+ 主要搞不懂为啥发布了那么久，反反复复的重复，都是因为用了第三方的插件导致？？
  ```
