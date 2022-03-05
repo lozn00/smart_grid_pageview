@@ -21,6 +21,9 @@ jobs:
       - name: "Checkout"
         uses: actions/checkout@v2
       - run: echo ' access token ${{ secrets.OAUTH_ACCESS_TOKEN }}'
+      - uses: dart-lang/setup-dart@9a04e6d73cca37bd455e0608d7e5092f881fd603
+      - name: Install dependencies
+        run: dart pub get
       # 发布插件
       - name: Dart and Flutter Package Publisher
         uses: k-paxian/dart-package-publisher@v1.2
