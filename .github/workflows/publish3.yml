@@ -9,7 +9,14 @@ on:
 jobs:
   publishing:
     runs-on: ubuntu-latest
+    
     steps:
+        # 建立 Flutter 环境
+      - name: Flutter env buyild
+        uses: subosito/flutter-action@v1
+        with:
+          channel: "stable"
+          flutter-version: "2.10.2"
       # 拉取仓库代码
       - name: "Checkout"
         uses: actions/checkout@v2
