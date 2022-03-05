@@ -1,6 +1,6 @@
 name: smart_gridded_pageview
 description: Automatically wrap the content, produce the height according to the content, and support page turning custom indicator
-version: 0.0.1
+version: 0.0.2
 homepage: http://github.com/qssq
 
 environment:

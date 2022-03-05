@@ -23,7 +23,7 @@ Pageview is unable to adapt to the height of the content, and this control solve
 pageview 是无法自适应内容高度的，而本控件解决了这个问题，本控件的效果如 图片所示，支持设置最小高度，以便解决每一页高度不同导致的高度跳动问题，另外也支持自定义指示器，
 ## Features
 y
- ![this ispic ](assets/pic.png)
+ ![this ispic ](example/assets/pic.png)
 
 
 ## Getting started
@@ -145,12 +145,10 @@ pageview 是无法自适应内容高度的，而本控件解决了这个问题�
 
 
  ```
- 
-
 set https_proxy=https://127.0.0.1:1079
 set http_proxy=http://127.0.0.1:1079
- flutter pub publish --dry-run
- flutter packages pub publish -v
+flutter pub publish --dry-run
+flutter packages pub publish -v
 flutter pub publish --server=https://pub.dartlang.org
 flutter packages pub publish --server=https://pub.dartlang.org
  ```

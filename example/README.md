@@ -92,8 +92,7 @@ flutter pub publish --server=https://pub.dartlang.org  -v
 flutter packages pub publish --server=https://pub.dartlang.org  -v
 set HTTP_PROXY=127.0.0.1:1080
 set HTpingTPS_PROXY=127.0.0.1:1080
-
- flutter pub publish --dry
+flutter pub publish --dry
  
  
  -run --server=https://pub.dartlang.org
