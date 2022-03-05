@@ -28,7 +28,7 @@ jobs:
         #dart pub get
       # 发布插件
       - name: Dart and Flutter Package Publisher
-        uses: k-paxian/dart-package-publisher@v1.2
+        uses: k-paxian/dart-package-publisher@v1.3
         with:
           # 设置发布插件需要的 Token
           accessToken: ${{ secrets.OAUTH_ACCESS_TOKEN }}
