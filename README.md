@@ -23,7 +23,7 @@ Pageview is unable to adapt to the height of the content, and this control solve
 pageview 是无法自适应内容高度的，而本控件解决了这个问题，本控件的效果如 图片所示，支持设置最小高度，以便解决每一页高度不同导致的高度跳动问题，另外也支持自定义指示器，
 ## Features
 y
- ![this ispic ](example/assets/pic.png)
+ ![this ispic ](https://github.com/qssq/smart_grid_pageview/raw/master/example/assets/pic.png)
 
 
 ## Getting started
@@ -74,13 +74,10 @@ GridPageView(  column: 5,
                 
 
 ```
-
-
 or 
 
 If you don't need custom indicators, you can do so using the following code  
 ```
-
   GridPageView(
                 column: 5,
                 minheight: 5,
@@ -97,8 +94,6 @@ If you don't need custom indicators, you can do so using the following code
 
 
  ```               
-
-
 
 ```dart
 GridPageView(
@@ -125,30 +120,12 @@ from the package authors, and more.
 
 
 
-
-
-
-
-
 # grid pageview
 
 Automatically wrap the content, produce the height according to the content, and support page turning custom indicator
 
 
 Pageview is unable to adapt to the height of the content, and this control solves this problem, the effect of this control as shown in the picture, support to set the minimum height, in order to solve the problem of the height of each page caused by different height, in addition to support custom indicators,  
-pageview 是无法自适应内容高度的，而本控件解决了这个问题，本控件的效果如 图片所示，支持设置最小高度，以便解决每一页高度不同导致的高度跳动问题，另外也支持自定义指示器，
-## Getting Started
+pageview 是无法自适应内容高度的，而本控件依赖了另外一个插件解决了这个问题，本控件的效果如上图 图片所示，支持设置最小高度，以便解决每一页高度不同导致的高度跳动问题，另外也支持自定义指示器。
+截图为example文件夹的lib/main.dart运行之后的效果
 
-
-
- # publish note
-
-
- ```
-set https_proxy=https://127.0.0.1:1079
-set http_proxy=http://127.0.0.1:1079
-flutter pub publish --dry-run
-flutter packages pub publish -v
-flutter pub publish --server=https://pub.dartlang.org
-flutter packages pub publish --server=https://pub.dartlang.org
- ```
