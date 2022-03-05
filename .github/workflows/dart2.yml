@@ -32,4 +32,4 @@ jobs:
 
 
       - name: publish
-        run: dart pub publish -v
+        run: echo '-Y'|dart pub publish -v
