@@ -1,11 +1,7 @@
 name: Publish to Pub.dev
 # 流程触发时机，create - 创建标签时, push - 推送时，release - 发布时 等
-#on: release
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+on: release
+
 jobs:
   publishing:
     runs-on: ubuntu-latest
